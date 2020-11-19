@@ -40,14 +40,15 @@ DJANGO_APPS = (
     'django.contrib.staticfiles',
 )
 
-THIRD_PARTY_APPS = (
-    # Aca irian apps externas como Django Rest Framework, Celery,
-    # django debug toolbar, etc
-)
-
 LOCAL_APPS = (
     # Aca irian las apps de nuestros proyectos que vamoss a
     # instalar, cosas como posts, perfiles, no sé
+    'polls.apps.PollsConfig',
+)
+
+THIRD_PARTY_APPS = (
+    # Aca irian apps externas como Django Rest Framework, Celery,
+    # django debug toolbar, etc
 )
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -118,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Bogota'
 
 USE_I18N = True
 
